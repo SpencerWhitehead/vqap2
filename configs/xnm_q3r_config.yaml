@@ -1,0 +1,27 @@
+dim_mem: -1
+dim_hidden: 1024
+glimpses: 2
+dropout: 0.5
+T_ctrl: 3
+stack_len: 4
+module_prob_use_gumbel: 1
+temperature: 1.0
+module_prob_use_validity: 1
+is_norm_fc_module: false
+lr: 0.0008
+lr_halflife: 50000
+num_epoch: 100
+batch_size: 256
+data_src:
+- original
+- syn
+- para
+- ant
+l_module: 1.0
+pert_loss_func: l1
+perturb_prob: 0.2
+perturbations:
+- syn
+- para
+- ant
+seed: 0
